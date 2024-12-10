@@ -1,0 +1,13 @@
+:root {
+    --background-color: #DBDBDB;
+    --font-color: #0F0F0F;
+    --board-color: #02306B;
+    --red-chip: #7A0505;
+    --yellow-chip: #FFEA00;
+}
+
+.dark {
+    --background-color: #0F0F0F;
+    --font-color: #DBDBDB;
+    --board-color: #047AE0;
+}
