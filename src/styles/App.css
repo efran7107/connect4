@@ -2,3 +2,13 @@
     font-family: var(--default-font-family);
     box-sizing: border-box;
 }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container h1 {
+    margin-top: 100px;
+    text-align: center;
+}

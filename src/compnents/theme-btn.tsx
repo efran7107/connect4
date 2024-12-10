@@ -23,8 +23,18 @@ export const ThemeBtn = () => {
             <div className="theme-cont">
                 <h6>Change Theme</h6>
                 <div className= 'theme-btn-container'>
-                    <input type='button' value='Dark' className={`dark-btn ${theme === 'dark' ? 'active' : ''}`} onClick={() => setTheme('dark')}/>
-                    <input type='button' value='Light' className={`light-btn ${theme === 'light' ? 'active' : ''}`} onClick={() => setTheme('light')}/>
+                    <input
+                        type='button'
+                        value='Dark'
+                        className={`dark-btn ${theme === 'dark' ? 'active' : ''}`}
+                        onClick={() => setTheme('dark')}
+                    />
+                    <input
+                        type='button'
+                        value='Light'
+                        className={`light-btn ${theme === 'light' ? 'active' : ''}`}
+                        onClick={() => setTheme('light')}
+                    />
                 </div>
             </div>
         </div>

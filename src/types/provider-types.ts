@@ -13,3 +13,11 @@ export type ThemeProviderState = {
     theme: Theme;
     setTheme: (theme: Theme) => void;
 }
+
+export type TUserProvider = {
+    name: string;
+    setName: (name: string) => void;
+    isNameSet: boolean;
+    setIsNameSet: (isNameSet: boolean) => void;
+}
+
