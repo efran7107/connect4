@@ -11,3 +11,10 @@
     --font-color: #DBDBDB;
     --board-color: #047AE0;
 }
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    color: var(--font-color);
+}
