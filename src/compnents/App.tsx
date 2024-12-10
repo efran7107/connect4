@@ -9,6 +9,9 @@ function App() {
     <>
       <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
         <ThemeBtn/>
+        <div className="container">
+            <h1>Connect 4</h1>
+        </div>
       </ThemeProvider>
     </>
   )
