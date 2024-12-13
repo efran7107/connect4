@@ -1,4 +1,4 @@
-import {ThemeProviderState} from "../types/provider-types.ts";
+import {ThemeProviderState, TUserProvider} from "../types/provider-types.ts";
 import {createContext, useContext} from "react";
 
 const initialState: ThemeProviderState = {
@@ -16,3 +16,9 @@ export const useTheme = () => {
 
     return context;
 };
+
+export const UserProviderContext = createContext<TUserProvider>(
+    {} as TUserProvider
+)
+
+export const useUser = () => useContext(UserProviderContext)

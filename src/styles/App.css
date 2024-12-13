@@ -2,3 +2,26 @@
     font-family: var(--default-font-family);
     box-sizing: border-box;
 }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container h1 {
+    margin: 100px 0;
+    text-align: center;
+    animation: fadeIn 1s;
+    filter: drop-shadow(0px 0px 20px var(--alt-background-color));
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
