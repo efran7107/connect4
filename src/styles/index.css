@@ -1,5 +1,5 @@
 :root {
-    --default-font-family: "Inter", Roboto Mono, sans-serif, monospace;
+    --default-font-family: Roboto Mono, "Inter", sans-serif, monospace;
     --background-color: #DBDBDB;
     --font-color: #0F0F0F;
     --alt-background-color: #0F0F0F;
@@ -34,6 +34,7 @@ p{
 
 input {
     font-family: var(--default-font-family);
+    transition:var(--default-transition)
 }
 
 input[type="button"] {
