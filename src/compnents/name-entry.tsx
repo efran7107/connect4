@@ -1,6 +1,6 @@
 import {useUser} from "../ts/provider-context.ts";
 import '../styles/name-entry.css'
-import {useState} from "react";
+import {ChangeEvent, useState} from "react";
 
 export const UserNameEntry = () => {
 
@@ -15,6 +15,10 @@ export const UserNameEntry = () => {
         setIsNameSet(true);
     }
 
+    const setValidName = (e: ChangeEvent<HTMLInputElement>)=> {
+        console.log(e)
+    }
+
     return(
         <div className="name-entry-cont">
             <p>Please enter a name to begin playing: </p>
@@ -24,7 +28,7 @@ export const UserNameEntry = () => {
                     type="text"
                     value={name}
                     className="user-name"
-                    onChange={(e) => setName(e.target.value)}
+                    onChange={someFunction}
                 />
                 {isFirstAttempt && <p>Please enter a name more than two characters to begin</p>}
                 <input type="submit" onClick={startGame} />
