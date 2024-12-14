@@ -1,6 +1,8 @@
 .gameboard {
     display: grid;
-    grid-template: repeat(6, 100px) / repeat(7, 100px);
+    grid-template: repeat(7, 100px) / repeat(7, 100px);
+    align-items: center;
+    justify-items: center;
 }
 
 .slot {

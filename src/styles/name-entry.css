@@ -20,6 +20,11 @@
     color: var(--font-color);
 }
 
+.name-entry input[type="text"]:focus-visible {
+    outline: 3px solid var(--alt-background-color);
+    transition: var(--default-transition);
+}
+
 .name-entry input[type="submit"] {
     border: 1px solid var(--alt-background-color);
     padding: 5px 7px;
