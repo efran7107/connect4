@@ -1,4 +1,5 @@
 import React from "react";
+import {Slot} from "./object-types.ts";
 
 
 export type Theme = 'light' | 'dark' | 'system';
@@ -19,5 +20,7 @@ export type TUserProvider = {
     setName: (name: string) => void;
     isNameSet: boolean;
     setIsNameSet: (isNameSet: boolean) => void;
+    gameboard: Slot[];
+    setGameboard: (gameboard: Slot[]) => void;
 }
 

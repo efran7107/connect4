@@ -1,0 +1,28 @@
+.gameboard {
+    display: grid;
+    grid-template: repeat(6, 100px) / repeat(7, 100px);
+}
+
+.slot {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    background-color: transparent;
+}
+
+.slot::before {
+    content: "";
+    display: block;
+    width: 95%;
+    padding-bottom: 95%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    border: solid 400px var(--alt-background-color);
+    border-radius: 50%;
+    transition: var(--default-transition);
+}
